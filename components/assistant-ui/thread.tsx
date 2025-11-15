@@ -95,7 +95,7 @@ const ThreadWelcome: FC = () => {
             exit={{ opacity: 0, y: 10 }}
             className="aui-thread-welcome-message-motion-1 text-2xl font-semibold"
           >
-            Hello there!
+            こんにちは、
           </m.div>
           <m.div
             initial={{ opacity: 0, y: 10 }}
@@ -104,7 +104,7 @@ const ThreadWelcome: FC = () => {
             transition={{ delay: 0.1 }}
             className="aui-thread-welcome-message-motion-2 text-2xl text-muted-foreground/65"
           >
-            How can I help you today?
+            今日はどのようにお手伝いしましょうか？
           </m.div>
         </div>
       </div>
@@ -118,24 +118,26 @@ const ThreadSuggestions: FC = () => {
     <div className="aui-thread-welcome-suggestions grid w-full gap-2 pb-4 @md:grid-cols-2">
       {[
         {
-          title: "What's the weather",
-          label: "in San Francisco?",
-          action: "What's the weather in San Francisco?",
+          title: "システム設計を提案してください",
+          label: "システム要件に基づいて",
+          action: "システム要件に基づいて、システム設計を提案してください",
         },
         {
-          title: "Explain React hooks",
-          label: "like useState and useEffect",
-          action: "Explain React hooks like useState and useEffect",
+          title: "システムやアプリの値段を説明してください",
+          label: "相場を教えてください",
+          action:
+            "今の日本相場を基づいてのシステムやアプリの値段を説明してください",
         },
         {
-          title: "Write a SQL query",
-          label: "to find top customers",
-          action: "Write a SQL query to find top customers",
+          title: "どんなシステムを作れますか？",
+          label: "アイデアを教えてください",
+          action: "どんなシステムを作れますか？ アイデアを教えてください",
         },
         {
-          title: "Create a meal plan",
-          label: "for healthy weight loss",
-          action: "Create a meal plan for healthy weight loss",
+          title: "どんな技術を使用して開発していますか？",
+          label: "使用技術を教えてください",
+          action:
+            "vue3, nuxt, sass, capacitor, firebase など技術のメリットとどんなシステムやアプリが開発られますかを詳しく説明してください",
         },
       ].map((suggestedAction, index) => (
         <m.div
